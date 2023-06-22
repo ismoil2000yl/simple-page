@@ -1,8 +1,7 @@
-import React, { Suspense, lazy } from "react";
+import { Suspense } from "react";
 import { Layout } from "components";
 import { Route, Routes } from "react-router-dom";
-import { authRoutes, privateRoutes } from "./index";
-import { get } from "lodash";
+import { privateRoutes } from "./index";
 
 const appRoutes = (routes) => {
   return routes.map((route, key) => (
