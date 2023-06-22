@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import React, { Suspense } from "react";
 import { Layout } from "components";
 import { Route, Routes } from "react-router-dom";
 import { privateRoutes } from "./index";
