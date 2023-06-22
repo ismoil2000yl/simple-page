@@ -1,0 +1,67 @@
+.telegram {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    // background-color: #000000;
+    background-repeat: no-repeat;
+    color: white;
+    // padding: 22px;
+
+    @include sm {
+        // background-size: contain;
+        height: 100%;
+    }
+
+    &-box {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        width: 34%;
+        height: 100%;
+        background-color: #000000;
+        padding: 0 22px;
+
+        @include sm {
+            flex-direction: column;
+            padding: 16px;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            text-decoration-line: underline;
+            color: #FFFFFF;
+
+            @include sm {
+                font-size: 12px;
+            }
+        }
+
+        &-btn {
+            border: 2px solid #FFFFFF;
+            border-radius: 100px;
+            padding: 7px 18px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            color: #FFFFFF;
+            transition: all .3s ease-in-out;
+
+            @include sm {
+                font-size: 14px;
+
+                padding: 2px 11px;
+            }
+
+            &:hover {
+                background-color: #FFFFFF;
+                color: #000000;
+            }
+        }
+    }
+}
