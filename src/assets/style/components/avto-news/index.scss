@@ -37,12 +37,18 @@
         @include sm {
             flex-direction: column;
         }
+        @include md {
+            flex-direction: column;
+        }
 
         &-img {
             width: 50%;
             height: 100%;
 
             @include sm {
+                width: 100%;
+            }
+            @include md {
                 width: 100%;
             }
 
@@ -59,6 +65,10 @@
             gap: 16px;
 
             @include sm {
+                width: 100%;
+                flex-direction: column-reverse;
+            }
+            @include md {
                 width: 100%;
                 flex-direction: column-reverse;
             }
@@ -98,6 +108,9 @@
         @include sm {
             flex-direction: column-reverse;
         }
+        @include md {
+            flex-direction: column-reverse;
+        }
 
         &-info {
             display: flex;
@@ -106,6 +119,10 @@
             width: 70%;
 
             @include sm {
+                width: 100%;
+                // flex-direction: column-reverse;
+            }
+            @include md {
                 width: 100%;
                 // flex-direction: column-reverse;
             }
@@ -132,6 +149,9 @@
                 @include sm {
                     flex-direction: column-reverse;
                 }
+                @include md {
+                    flex-direction: column-reverse;
+                }
 
                 &-data {
                     display: flex;
@@ -152,6 +172,10 @@
             overflow: hidden;
 
             @include sm {
+                width: 100%;
+            }
+
+            @include md {
                 width: 100%;
             }
 

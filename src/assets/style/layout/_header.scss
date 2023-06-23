@@ -11,6 +11,10 @@
         height: 60px;
     }
 
+    @include md {
+        height: 75px;
+    }
+
     &__wrapper {
         display: flex;
         align-items: center;
@@ -29,6 +33,11 @@
                 @include sm {
                     width: 74px;
                     height: 25px;
+                }
+
+                @include md {
+                    width: 100px;
+                    height: 30px;
                 }
 
                 img {
@@ -62,6 +71,10 @@
                 }
 
                 @include sm {
+                    display: none;
+                }
+
+                @include md {
                     display: none;
                 }
             }
@@ -111,6 +124,7 @@
 
                     &:hover {
                         background-color: #AFAFAF;
+
                         .lang-item-title {
                             font-weight: 800;
                             // color: #051ED6;
@@ -120,5 +134,39 @@
                 }
             }
         }
+    }
+
+    &__page {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+
+        @include sm {
+            display: flex;
+        }
+
+        @include md {
+            display: flex;
+        }
+
+        &__btn {
+            padding: 5px;
+        }
+
+        &__logo {
+            width: 74px;
+            height: 25px;
+        }
+    }
+}
+
+.header-none {
+
+    @include sm {
+        display: none;
+    }
+
+    @include md {
+        display: none;
     }
 }

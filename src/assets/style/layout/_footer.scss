@@ -7,6 +7,10 @@
         background-color: #F5F5F5;
     }
 
+    @include md {
+        background-color: #F5F5F5;
+    }
+
     &__wrapper {
         padding: 40px 0;
         display: flex;
@@ -15,6 +19,10 @@
         background-size: contain;
 
         @include sm {
+            display: none;
+        }
+
+        @include md {
             display: none;
         }
 
@@ -134,6 +142,10 @@
             display: none;
         }
 
+        @include md {
+            display: none;
+        }
+
         &__left {
             width: 25%;
 
@@ -174,6 +186,10 @@
         overflow: hidden;
 
         @include sm {
+            display: block;
+        }
+
+        @include md {
             display: block;
         }
 

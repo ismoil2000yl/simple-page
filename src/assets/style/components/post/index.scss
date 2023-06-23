@@ -29,10 +29,17 @@
                     @include sm {
                         display: none;
                     }
+                    @include md {
+                        display: none;
+                    }
                 }
 
                 &:nth-child(4) {
                     @include sm {
+                        display: none;
+                    }
+
+                    @include md {
                         display: none;
                     }
                 }
@@ -45,6 +52,10 @@
             gap: 24px;
 
             @include sm {
+                display: none;
+            }
+
+            @include md {
                 display: none;
             }
 

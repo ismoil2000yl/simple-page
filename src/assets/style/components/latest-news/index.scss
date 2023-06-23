@@ -30,6 +30,10 @@
       flex-direction: column;
     }
 
+    @include md {
+      flex-direction: column;
+    }
+
     &-title {
       font-weight: 800;
       font-size: 24px;
@@ -67,7 +71,11 @@
     @include sm {
       display: flex;
       flex-direction: column-reverse;
+    }
 
+    @include md {
+      display: flex;
+      flex-direction: column-reverse;
     }
 
     &-info {
@@ -77,6 +85,11 @@
       gap: 18px;
 
       @include sm {
+        width: 100%;
+        flex-direction: column-reverse;
+      }
+
+      @include md {
         width: 100%;
         flex-direction: column-reverse;
       }
@@ -102,6 +115,11 @@
           gap: 16px;
         }
 
+        @include md {
+          flex-direction: column-reverse;
+          gap: 16px;
+        }
+
         &-data {
           display: flex;
           align-items: center;
@@ -122,6 +140,10 @@
       overflow: hidden;
 
       @include sm {
+        width: 100%;
+      }
+
+      @include md {
         width: 100%;
       }
 
