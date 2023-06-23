@@ -189,3 +189,23 @@ img {
         }
     }
 }
+
+.teg-group {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .teg {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: #051ED6;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            color: green;
+        }
+    }
+}

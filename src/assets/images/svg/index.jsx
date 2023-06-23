@@ -6,5 +6,6 @@ import IconHome from './home'
 import IconAvto from './avto'
 import IconTavfsif from './tavfsiv'
 import IconLenta from './link'
+import IconTelegram from './telegram'
 
-export {IconFacebook, IconInstagram, IconLink, IconTwitter, IconAvto, IconHome, IconLenta, IconTavfsif}
+export {IconFacebook, IconInstagram, IconLink, IconTwitter, IconTelegram, IconAvto, IconHome, IconLenta, IconTavfsif}

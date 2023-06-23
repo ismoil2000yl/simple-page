@@ -1,4 +1,6 @@
 import Post from 'components/post'
+import Reklama from 'components/reklama'
+import OxirgiYangilik from 'components/oxirgi yangliklar'
 
 const index = () => {
     return (
@@ -6,6 +8,8 @@ const index = () => {
             <div className="container">
                 <div className="page__wrapper">
                     <Post />
+                    <Reklama />
+                    <OxirgiYangilik />
                 </div>
             </div>
         </div>

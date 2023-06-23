@@ -1,0 +1,194 @@
+.post {
+    background-color: #FFFFFF;
+    border: 3px solid #EFF0F3;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &-statistic {
+        display: flex;
+        justify-content: space-between;
+
+        &-box {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 9.33px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16px;
+                color: #9B9B9C;
+
+                &:nth-child(3) {
+                    @include sm {
+                        display: none;
+                    }
+                }
+
+                &:nth-child(4) {
+                    @include sm {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &-network {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            @include sm {
+                display: none;
+            }
+
+            &-item {
+                padding: 10px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    background-color: #051ED6;
+
+                    .post-statistic-network-item-icon {
+                        path {
+                            fill: white;
+                        }
+                    }
+                }
+
+                &-icon {
+                    width: 16px;
+                    height: 16px;
+
+                    path {
+                        fill: #051ED6;
+                    }
+                }
+            }
+        }
+    }
+
+    &-title {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 52px;
+        color: #000000;
+
+        @include sm {
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+
+    &-description {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 37px;
+        color: #000000;
+
+        @include sm {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+
+    &-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-skeditor {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            color: #000000;
+
+            @include sm {
+                font-size: 20px;
+                line-height: 27px;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 37px;
+            color: #000000;
+
+            @include sm {
+                font-size: 14px;
+                line-height: 27px;
+            }
+        }
+
+        &-div {
+            background-color: #F2F2F2;
+
+            &-wrapper {
+                padding: 35px 40px;
+                display: flex;
+                gap: 12px;
+
+                @include sm {
+                    padding: 16px;
+                }
+
+                span {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 64px;
+                    line-height: 73px;
+                    color: #000000;
+                }
+
+                p {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #000000;
+                    opacity: 1;
+
+                    @include sm {
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    hr {
+        height: 0px;
+        border: 2px solid #F1F1F1;
+    }
+}
