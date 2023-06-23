@@ -1,12 +1,16 @@
 import ImgNews from 'assets/images/jpg/news.jpg'
 import moment from 'moment/moment'
 import IconClock from 'assets/images/png/clock.png'
+import { useNavigate } from 'react-router-dom'
 
 const index = () => {
+
+    const navigate = useNavigate()
+
     return (
         <div className='news'>
             <div className="news-box">
-                <div className="news-box-img">
+                <div className="news-box-img" onClick={()=>navigate('/page')}>
                     <img src={ImgNews} alt="" />
                 </div>
                 <div className="news-box-info">

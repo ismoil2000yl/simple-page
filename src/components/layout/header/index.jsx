@@ -1,17 +1,20 @@
 import IconLogo from 'assets/images/png/Logo.png'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const header = () => {
 
   const [menuActive, setMenuActive] = useState(1)
   const [langActive, setLangActive] = useState(1)
 
+  const navigate = useNavigate()
+
   return (
     <header className='header'>
       <div className="container">
         <div className="header__wrapper">
           <div className="header__wrapper__nav">
-            <div className="header__wrapper__nav__logo">
+            <div className="header__wrapper__nav__logo" onClick={()=>navigate('/')}>
               <img src={IconLogo} alt="" />
             </div>
             <nav className="navbar">
